@@ -52,6 +52,10 @@ a{
     padding: 10px 30px;
     cursor: pointer;
 }
+
+.btn:hover{
+    padding: 15px 35px;
+}
 /* Flexbox */
 
 /* Z-Index */
