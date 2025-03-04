@@ -19,9 +19,13 @@
 /* Backgrounds */
 
 /* Margins */
-
+.mt-10{
+    margin-top: 10px;
+}
 /* Padding */
-
+.py-5{
+    padding: 5px 0;
+}
 /* Columns */
 
 /* Buttons */
@@ -74,6 +78,10 @@ main{
     padding: 15px;
     color: grey;
     font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sidebar-header{
@@ -81,27 +89,68 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #sidebar .logo{
     width: 75%;
 }
 
-#sidebar .sidebar-menu ul{
+#sidebar ul{
     list-style: none;
-    font-weight: 600;
+    
+}
+
+#sidebar li{
+    padding: 5px 0;
 }
 
 #sidebar .sidebar-menu li{
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
-
+#TODO
+#sidebar .sidebar-menu li .sidebar-icon:hover{
+   margin-left: 2px solid red;
+}
 
 #sidebar .sidebar-icon{
     width: 15%;
     margin-right: 5px; 
+}
+
+#sidebar .sidebar-section-title{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#sidebar .create-playlist{
+    display: flex;
+    align-items: center;
+}
+
+#sidebar .create-playlist i{
+    padding: 10px;
+    background-color: #A3A3A3;
+    color: #000;
+    margin-right: 10px;
+}
+
+#sidebar .install{
+    display: flex;
+}
+
+#sidebar .profile{
+    display: flex;
+}
+
+#sidebar .sidebar-footer{
+    align-self: flex-end;
+}
+
+.sidebar-footer-img{
+    width: 20px;
 }
 
 /* Section: FOOTER */
