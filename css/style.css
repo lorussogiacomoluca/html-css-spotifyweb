@@ -12,6 +12,11 @@
     border: 2px solid red;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Text */
 .text-white{
     color: #fff;
@@ -73,21 +78,70 @@ main{
 #content{
     width: calc(100% - 200px);
     overflow-y: auto;
-    background-color: yellow;
+}
+
+.homepage{
+    padding: 15px;
+    color: #fff;
+}
+
+.homepage-menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: grey;
+}
+
+
+.homepage-menu li:hover{
+    color: #fff;
+}
+
+.homepage-menu li:hover::after{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #adff2f;
+    margin: 1px auto;
+}
+
+.homepage-menu li:first-child{
+    color: #fff;
+}
+
+.homepage-menu li:first-child::after{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #adff2f;
+    margin: 1px auto;
 }
 
 .songs-container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .song-card{
     width: calc(100% / 7);
 }
 
+.song-title, .song-subtitle{
+    text-align: center;
+}
+
 .song-image img{
     width: 100%;
 }
+
+
 
 /* Section: SIDEBAR */
 #sidebar{
