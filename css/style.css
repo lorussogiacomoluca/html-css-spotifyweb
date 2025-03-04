@@ -40,6 +40,11 @@ a{
     width: 15%;
 }
 
+.col-60{
+    width: 60%;
+}
+
+
 /* Buttons */
 .btn{
     border: 1px solid #fff;
@@ -319,6 +324,14 @@ main{
 /* Section: FOOTER */
 footer .row{
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer i:hover{
+    color: #fff;
+    cursor: pointer;
 }
 
 .now-playing{
@@ -347,7 +360,24 @@ footer .row{
     font-weight: 600;
 }
 
-.now-playing i:hover{
-    color: #fff;
-    cursor: pointer;
+
+
+.controller{
+    color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-bar{
+    background-color: #5A5A5A;
+    width: 60%;
+    height: 3px;
+    border-radius: 15px;
+}
+
+.progress-complete{
+    height: 100%;
+    width: 20%;
+    background-color: #C1C1C1;
 }
