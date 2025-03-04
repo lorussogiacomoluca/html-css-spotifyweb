@@ -71,11 +71,37 @@ main{
     height: 100%;
     width: 200px;
     background-color: #000000;
+    padding: 15px;
+    color: grey;
+    font-size: 15px;
 }
 
-#content{
-    width: calc(100% - 100px);
-    overflow-y: auto;
+.sidebar-header{
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar .logo{
+    width: 75%;
+}
+
+#sidebar .sidebar-menu ul{
+    list-style: none;
+    font-weight: 600;
+}
+
+#sidebar .sidebar-menu li{
+    display: flex;
+    align-items: center;
+}
+
+
+
+#sidebar .sidebar-icon{
+    width: 15%;
+    margin-right: 5px; 
 }
 
 /* Section: FOOTER */
