@@ -21,6 +21,10 @@ a{
 .text-white{
     color: #fff;
 }
+
+.text-grey{
+    color: #808080;
+}
 /* Backgrounds */
 
 /* Margins */
@@ -32,6 +36,9 @@ a{
     padding: 5px 0;
 }
 /* Columns */
+.col-15{
+    width: 15%;
+}
 
 /* Buttons */
 .btn{
@@ -312,3 +319,37 @@ main{
 }
 
 /* Section: FOOTER */
+footer .row{
+    padding: 10px;
+}
+
+.now-playing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #808080;
+}
+
+.now-playing-img img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.now-playing-info{
+    width: 50%;
+}
+
+.now-playing-artist{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.now-playing-title {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.now-playing i:hover{
+    color: #fff;
+    cursor: pointer;
+}
