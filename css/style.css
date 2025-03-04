@@ -40,8 +40,8 @@ a{
     width: 15%;
 }
 
-.col-60{
-    width: 60%;
+.col-40{
+    width: 40%;
 }
 
 
@@ -360,7 +360,18 @@ footer i:hover{
     font-weight: 600;
 }
 
+.player-command{
+    width: 40%;
+    display: flex;
+    margin: 0 auto;
+}
 
+
+.palyer-progress{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+}
 
 .controller{
     color: #808080;
