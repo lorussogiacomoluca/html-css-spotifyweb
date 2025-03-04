@@ -6,14 +6,15 @@
     font-family: "Funnel Display", serif;
 }
 
-.container {
-    max-width: 1180px;
-    margin: 0 auto;
-}
 
 /* Utility */
 .bored{
     border: 2px solid red;
+}
+
+/* Text */
+.text-white{
+    color: #fff;
 }
 /* Backgrounds */
 
@@ -24,7 +25,12 @@
 /* Columns */
 
 /* Buttons */
-
+.btn{
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
 /* Flexbox */
 
 /* Z-Index */
@@ -36,9 +42,17 @@
 /* Section: HEADER */
 header{
     position: sticky;
-    height: 120px;
+    height: 100px;
     top: 0;
     background-color: #080B12;
+}
+
+header .row{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+
 }
 /* Section: MAIN */
 main{
@@ -47,6 +61,12 @@ main{
     display: flex;
 }
 
+#content{
+    width: calc(100% - 100px);
+    overflow-y: auto;
+}
+
+/* Section: SIDEBAR */
 #sidebar{
     height: 100%;
     width: 200px;
@@ -54,8 +74,10 @@ main{
 }
 
 #content{
-    width: calc(100% - 120px);
+    width: calc(100% - 100px);
+    overflow-y: auto;
 }
+
 /* Section: FOOTER */
 footer{
     height: 100px;
