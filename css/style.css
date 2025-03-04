@@ -137,11 +137,11 @@ main{
     margin-right: 10px;
 }
 
-#sidebar .install{
-    display: flex;
+#sidebar .playlist li{
+    padding: 10px 0;
 }
 
-#sidebar .profile{
+#sidebar .install, .profile{
     display: flex;
 }
 
@@ -149,8 +149,21 @@ main{
     align-self: flex-end;
 }
 
-.sidebar-footer-img{
+#sidebar .install{
+    padding: 5px 0;
+}
+
+#sidebar .sidebar-footer-img{
+    margin-right: 5px;
+}
+
+#sidebar .profile .sidebar-footer-img{
     width: 20px;
+}
+
+#sidebar .profile{
+    border-top: 1px solid grey;
+    padding: 15px 0 0;
 }
 
 /* Section: FOOTER */
