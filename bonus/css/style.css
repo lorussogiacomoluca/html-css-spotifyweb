@@ -454,7 +454,9 @@ footer i:hover{
     transform: translate(-50%, -50%);
 }
 
-
+.volume-display-middle{
+    display: none;
+}
 
 /* Media Query */
 
@@ -505,10 +507,16 @@ footer i:hover{
 
     .player{
         max-width: 100%;
+        order: -1;
+        width: 200px;
     }
 
     .palyer-progress{
         width: 90%;
+    }
+
+    .controller{
+        display: none;
     }
  
 }
@@ -542,6 +550,24 @@ footer i:hover{
     .now-playing-right{
         flex-direction: column;
     }
+
+    footer .player-command, .start, .duration, .now-playing-folder{
+        display: none;
+    }
+
+    footer .row{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    footer .now-playing{
+        order: -1;
+    }
+
+    footer .palyer-progress .progress-bar{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 480px){
