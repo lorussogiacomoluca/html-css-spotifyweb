@@ -40,6 +40,10 @@ a{
     width: 15%;
 }
 
+.col-25{
+    width: 25%;
+}
+
 .col-40{
     width: 40%;
 }
@@ -70,6 +74,7 @@ header{
     height: 70px;
     top: 0;
     background-color: #080B12;
+    z-index: 1;
 }
 
 footer{
@@ -82,6 +87,7 @@ header .row{
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    width: 100%;
 
 }
 /* Section: MAIN */
@@ -102,13 +108,16 @@ main{
 }
 
 .homepage-menu ul{
+    width: 100%;
+    margin: 0 auto;
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     color: grey;
+    font-size: 12px;
 }
 
 
@@ -142,7 +151,6 @@ main{
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .section-title{
@@ -157,7 +165,13 @@ main{
 }
 
 .song-card{
-    width: calc(100% / 7);
+    max-width: 15%;
+}
+
+.create-for .songs-container, .popular-artist .songs-container{
+    display: flex;
+    justify-content: flex-start;
+    gap: calc(100% / 7 / 5);
 }
 
 .song-title, .song-subtitle{
@@ -167,13 +181,10 @@ main{
 .song-image{
     position: relative;
     width: 100%;
-    max-width: 400px;
 }
 
 .song-image img{
     width: 100%;
-    display: block;
-    height: auto;
 }
 
 .img-overlay{
@@ -217,17 +228,9 @@ main{
     font-weight: 600;
 }
 
-.create-for .songs-container, .popular-artist .songs-container{
-    justify-content: flex-start;
-    gap: calc(100% / 7 / 5);
-}
-
 .popular-artist .songs-container img{
     border-radius: 50%;
 }
-
-
-
 
 /* Section: SIDEBAR */
 #sidebar{
@@ -338,10 +341,15 @@ main{
 
 /* Section: FOOTER */
 footer .row{
+    height: 100%;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer i{
+    margin: 5%;
 }
 
 footer i:hover{
@@ -354,6 +362,18 @@ footer i:hover{
     align-items: center;
     justify-content: space-between;
     color: #808080;
+    border: 1px solid green;
+}
+
+.now-playing-left{
+    display: flex;
+    width: 70%;
+}
+
+.now-playing-right{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
 }
 
 .now-playing-img img{
@@ -362,7 +382,8 @@ footer i:hover{
 }
 
 .now-playing-info{
-    width: 50%;
+    width: 60%;
+    border: 1px solid red;
 }
 
 .now-playing-artist{
@@ -406,4 +427,53 @@ footer i:hover{
     height: 100%;
     width: 20%;
     background-color: #C1C1C1;
+}
+
+/* Media Query */
+
+/* Tablet: max-width 768px */
+@media screen and (max-width: 768px){
+    .btn{
+        border: 1px solid #fff;
+        border-radius: 25px;
+        padding: 10px 30px;
+        cursor: pointer;
+        font-size: 9px;
+    }
+    
+    .btn:hover{
+        padding: 15px 35px;
+    }
+
+    .homepage-menu ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .homepage-menu li{
+        flex-basis: calc(20% - 10px);
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .homepage-menu li:first-child::after{
+        display: none;
+    }
+    
+    .songs-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px; 
+    }
+    
+    .song-card {
+        width: calc(25% - 10px); 
+        max-width: none;
+        margin-bottom: 15px;
+    }
+ 
 }
