@@ -84,7 +84,6 @@ header .row{
     align-items: center;
     height: 100%;
     width: 100%;
-
 }
 /* Section: MAIN */
 main{
@@ -433,7 +432,29 @@ footer i:hover{
     height: 100%;
     width: 20%;
     background-color: #C1C1C1;
+    position: relative;
 }
+
+.progress-bar:hover .progress-complete{
+    background-color: #adff2f;
+    cursor: pointer;
+}
+
+.progress-bar:hover .progress-complete::after{
+    content: '';
+    width: 15px;
+    background-color: #fff;
+    display: block;
+    height: 15px;
+    border-radius: 50%;
+    margin: 1px auto;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 /* Media Query */
 
