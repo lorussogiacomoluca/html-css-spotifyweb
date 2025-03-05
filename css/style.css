@@ -344,7 +344,7 @@ footer .row{
 }
 
 footer i{
-    margin: 5%;
+    margin: 0 5%;
 }
 
 footer i:hover{
@@ -390,6 +390,12 @@ footer i:hover{
 .now-playing-title {
     font-size: 12px;
     font-weight: 600;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .player-command{
@@ -554,6 +560,12 @@ footer i:hover{
         justify-content: center;
         width: 100%;
         margin: 10px 0;
+    }
+
+    #sidebar .d-xs {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
     }
 
     #sidebar .logo-xs{
