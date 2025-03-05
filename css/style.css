@@ -8,10 +8,6 @@
 
 
 /* Utility */
-.bored{
-    border: 2px solid red;
-}
-
 a{
     text-decoration: none;
     color: inherit;
@@ -78,7 +74,7 @@ header{
 }
 
 footer{
-    height: 80px;
+    height: 85px;
     background-color: #282828;
 }
 
@@ -92,7 +88,7 @@ header .row{
 }
 /* Section: MAIN */
 main{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 85px);
     background-color: #141922;
     display: flex;
 }
@@ -258,6 +254,10 @@ main{
     width: 75%;
 }
 
+#sidebar .logo-xs{
+    display: none;
+}
+
 #sidebar ul{
     list-style: none;
 }
@@ -273,11 +273,6 @@ main{
 #sidebar .sidebar-menu li{
     display: flex;
     align-items: center; 
-}
-
-#TODO
-#sidebar .sidebar-menu li .sidebar-icon:hover{
-   margin-left: 2px solid red;
 }
 
 #sidebar .sidebar-icon{
@@ -381,6 +376,9 @@ footer i:hover{
 }
 
 .now-playing-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 60%;
 }
 
@@ -477,6 +475,14 @@ footer i:hover{
         max-width: none;
         margin-bottom: 15px;
     }
+
+    .player{
+        max-width: 100%;
+    }
+
+    .palyer-progress{
+        width: 90%;
+    }
  
 }
 
@@ -509,12 +515,57 @@ footer i:hover{
     .now-playing-right{
         flex-direction: column;
     }
+}
 
-    .player{
-        max-width: 100%;
+@media screen and (max-width: 480px){
+
+    .homepage-menu ul{
+        gap: 10px;
     }
 
-    .palyer-progress{
-        width: 90%;
+    .homepage-menu li{
+        flex-basis: calc(25% - 10px);
+    }
+
+    .now-playing, .controller{
+        width: 30%;
+    }
+
+    #sidebar {
+        width: 50px;
+    }
+
+    #content{
+        width: calc(100% - 50px);
+    }
+    
+    #sidebar .logo:not(.d-xs),
+    #sidebar .sidebar-menu-item,
+    #sidebar .sidebar-section-title,
+    #sidebar .create-playlist,
+    #sidebar .playlist,
+    #sidebar .install-text,
+    #sidebar .profil-text {
+        display: none;
+    }
+
+    #sidebar .sidebar-icon {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #sidebar .logo-xs{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .now-playing-artist{
+        font-size: 10px;
+    }
+
+    .now-playing-title{
+        font-size: 8px;
     }
 }
