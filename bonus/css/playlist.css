@@ -1,8 +1,16 @@
 #content{
     width: calc(100% - 300px);
+    background: rgb(191,183,168);
+background: linear-gradient(180deg, rgba(191,183,168,0.639093137254902) 20%, rgba(0,0,0,0) 60%);
+    
 }
 
-/* Section: SIDEBAR */
+.homepage{
+    border-radius: 15px 15px 0 0;
+    
+height: 500px;
+}
+
 #sidebar{
     width: 300px;
 }
@@ -83,7 +91,140 @@ header .row i:hover{
     color: #fff;
 }
 
-.homepage{
-    border: 1px solid red;
-    border-radius: 15px;
+
+
+.homepage .hero{
+    padding: 30px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    gap: 20px;
+}
+
+.homepage .hero .playlist-img{
+    -webkit-box-shadow: 7px 10px 17px 4px #000000; 
+    box-shadow: 7px 10px 17px 4px #000000;
+}
+
+.playlist-info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.playlist-info .type{
+    margin-top: 10%;
+}
+
+.playlist-info .playlist-title{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.playlist-save .profile-pic{
+    width: 5%;
+
+}
+
+.playlist-save .profile-pic img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.playlist-save{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-name{
+    font-weight: 800;
+    margin: 0 5px;
+}
+
+.playlist-container{
+    padding: 10px;
+}
+
+.action-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #B3B3B3;
+}
+
+.action-bar *{
+    cursor: pointer;
+}
+
+.action-left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.action-bar .fa-circle-play{
+    color: #1DD05D;
+    font-size: 4rem;
+}
+
+.action-bar .fa-plus{
+    font-size: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid #B3B3B3;
+    padding: 5px;
+}
+
+.table table{
+    margin-top: 15px;
+    width: 100%;
+    border-spacing: 0 10px;
+    color: grey;
+}
+
+.table th{
+    padding: 5px 0;
+    border-bottom: 0.1px solid grey;
+    text-align: left;
+}
+
+table head{
+    display: block;
+    margin-bottom: 50px;
+}
+
+table tr td:first-child{
+    width: 3%;
+}
+
+.table td:nth-child(2){
+    width: 3%;
+}
+
+table tr td img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.table td:nth-child(3){
+    padding: 0 0 0 5px;
+    width: 33%;
+}
+.song-name{
+    color: #fff;
+}
+.song-author{
+    font-size: 10px;
+}
+
+.table td:nth-child(4){
+    width: 29%;
+}
+.table td:nth-child(5){
+    width: 29%;
+}
+.table td:nth-child(6){
+    width: 3%;
 }
