@@ -336,7 +336,7 @@ main{
 /* Section: FOOTER */
 footer .row{
     height: 100%;
-    padding: 2px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -354,13 +354,13 @@ footer i:hover{
 .now-playing{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     color: #808080;
 }
 
 .now-playing-left{
     display: flex;
-    width: 70%;
+    width: 150px;
 }
 
 .now-playing-right{
