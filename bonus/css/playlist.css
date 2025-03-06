@@ -1,0 +1,89 @@
+#content{
+    width: calc(100% - 300px);
+}
+
+/* Section: SIDEBAR */
+#sidebar{
+    width: 300px;
+}
+
+#sidebar .logo{
+    width: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#sidebar .logo:hover{
+    filter: brightness(0) saturate(100%) invert(79%) sepia(74%) saturate(1436%) hue-rotate(75deg) brightness(85%) contrast(90%);
+}
+
+header .row{
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+header .row i:hover{
+    color: #1DD05D;
+    cursor: pointer;
+}
+
+.spacer{
+    width: 30%;;
+}
+
+.header-left{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-right{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-control, .home-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F1F1F;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.home-icon{
+    padding: 10px 15px;
+    margin-right: 50px;
+}
+
+.search-control .text{
+    margin: 0px 90px 0px 10px;
+}
+
+.search-control .folder{
+    border-left: 1px solid #fff;
+    padding: 0 0 0 15px;
+}
+
+.btn-playlist{
+    text-align: center;
+    width: 30%;
+    border-radius: 25px;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #1F1F1F;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+.btn-playlist:hover{
+    background-color: #1DD05D;
+    color: #fff;
+}
+
+.homepage{
+    border: 1px solid red;
+    border-radius: 15px;
+}
