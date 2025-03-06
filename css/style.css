@@ -510,6 +510,10 @@ footer i:hover{
     .palyer-progress{
         width: 90%;
     }
+
+    .now-playing{
+        width: 25%;
+    }
  
 }
 
